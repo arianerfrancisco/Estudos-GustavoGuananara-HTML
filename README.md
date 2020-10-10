@@ -1,4 +1,2 @@
 # Estudos HTML
-
-teste, mel lindinha
-caraio
+Curso em vídeo - Prof Gustavo Guanabara
