@@ -134,3 +134,34 @@ nav#menu a:hover { /* mudar a cor quando estiver ativo no mouse */
     color: white;
     text-decoration: underline; /*sublinhar apenas quando passar o mouse */
 }
+section#corpo {
+    display: block; /* aparecer como bloco */
+    width: 520px;  /*definiçao da largura */
+    float: left; /* se posicione no lado esquerdo, apenas se estiver configurado como bloco*/
+    border-right: 1px solid black;
+    padding-right: 15px;
+}
+table#tabelaspec {
+    border: 1px solid black;
+}
+
+table#tabelaspec td {
+    border: 1px solid black;
+    border-spacing: 0px; /* retirar espaço entre as tabelas */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; /* espaço interno entre as tabelas */
+}
+
+aside#lateral {
+    display: block; /* aparecer como bloco */ 
+    width: 350px;  /*definiçao da largura */
+    float: right; /*se posicione no lado direito, apenas se estiver configurado como bloco */
+}
+footer#rodape {
+    clear: both; /* essa config limpará as configurações feitas em section e aside */
+    border-top: 1px solid black;
+}
+footer#rodape p {
+    text-align: center;
+}
