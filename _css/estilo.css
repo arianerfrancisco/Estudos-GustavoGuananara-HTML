@@ -1,14 +1,27 @@
 @charset "utf-8";
 
 body {
-    background:#4e2b4529;
+    background:#4e2b4529; /*cor de fundo */
     color: #9c27b0;
 }
+
+div#interface {
+    width: 900px; /*delimitação de todo o contéudo na página, exceto o menu que está num posicionamento absoluto*/
+    background-color: white; /*cor da interface e não de todo o site */
+    margin: -20px auto 0px auto; /*  ÍNICIO DA NOTA
+    > ordem: cima, direita, baixo  e esquerda. A definição auto fará que o próprio navegador assuma o controle da posição, que neste caso foi margem direira e a esquerda
+    > Esta configuração centralizou a interface no corpo do site
+    FIM DA NOTA*/
+    box-shadow: 0px 0px 10px black; /* sombra na borda da interface>  ordem: deslocamento lateral, deslocamento vertical, espalhamento da sombra e a cor da sombra (pode ser definida pelo canal rgba com sombreamento */
+    padding: 10px; 
+    /* posição da caixa de texto dentro da interface, quando informamos apenas 1 valor ele será aplicado a todos os lados*/
+}
+
 h1 {
         font-family: Arial;
         font-size:30pt;
         color: #673AB7;  
-        text-shadow: 2px 2px 2px black; 
+        text-shadow: 2px 2px 2px black;
 }
 p { 
         text-align:justify;
@@ -18,7 +31,15 @@ p {
 1 ETAPA: defininir uma classe para as imagens
 Ex: <figure class="foto-legenda"> 
 2 ETAPA: definir o estilo*/
+header#cabecalho img#icone { /*formatando a foto do óculos, um objeto que está dentro do cabeçalho com id definido como ícone */
+    position: absolute; /* todas as definiçoes de posição serão aplicadas em relacao ao corpo do site */
+    left: 780px;
+    top: 40px;
+}
+header#cabecalho {
+    border-bottom: 1px black solid; /* criar uma linha no cabeçalho, dashed> tracejado e dotted > pontilhado */
 
+}
 figure.foto-legenda {
     position: relative;
     border: 8px solid white;
