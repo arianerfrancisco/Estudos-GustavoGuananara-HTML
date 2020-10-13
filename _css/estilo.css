@@ -1,4 +1,12 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo'; 
+    /*fontes de locais externos:  respositorio publico de fontes> https://fonts.google.com/ 
+    para utilizar uma fonte fora dos arquivos locais. No site do Google: escola o link pelo @import do tipo latim
+    Caso o navegador não esteja numa versão atualizada,. não trata a fonte solicitada, mas sim uma padrão*/
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body {
     background:#4e2b4529; /*cor de fundo */
@@ -18,7 +26,7 @@ div#interface {
 }
 
 h1 {
-        font-family: Arial;
+        font-family: 'FonteLogo';
         font-size:30pt;
         color: #673AB7;  
         text-shadow: 2px 2px 2px black;
@@ -33,12 +41,31 @@ Ex: <figure class="foto-legenda">
 2 ETAPA: definir o estilo*/
 header#cabecalho img#icone { /*formatando a foto do óculos, um objeto que está dentro do cabeçalho com id definido como ícone */
     position: absolute; /* todas as definiçoes de posição serão aplicadas em relacao ao corpo do site */
-    left: 780px;
-    top: 40px;
+    left: 750px;
+    top: 45px;
 }
 header#cabecalho {
-    border-bottom: 1px black solid; /* criar uma linha no cabeçalho, dashed> tracejado e dotted > pontilhado */
-
+    border-bottom: 1px black solid; /* criar uma linha no cabeçalho, dashed> tracejado, dotted > pontilhado  ou solid > linha normal*/
+    height: 150px; /* altura do cabeçalho */
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px; /*primeiro é deslocamento lateral e o segundo vertical*/
+    /*  > fazer a logomarca do google glass aparecer no cabeçalho do site apenas 1 vez usando no-repeat.
+    > A referência desta imagem se dá pois o estilo css está dentro da pasta css e a imagem na pasta imagem, sendo assim, precisa voltar a pasta raiz do curso e entrar na pasta _imagem */
+}
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #888888;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px; /*configurando apenas a margem de baixo */
+}
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif; /* fonte importada pelo site da Google */
+    font-size: 30pt;
+    color: #673AB7;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-top: 0px; /* configurando apenas a margem de cima */
 }
 figure.foto-legenda {
     position: relative;
