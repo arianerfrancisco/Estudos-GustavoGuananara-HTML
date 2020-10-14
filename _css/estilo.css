@@ -9,6 +9,7 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     background:#4e2b4529; /*cor de fundo */
     color: #9c27b0;
 }
@@ -34,6 +35,13 @@ h1 {
 p { 
         text-align:justify;
         text-indent: 50px;
+}
+a {
+    color: pink;
+    text-decoration: none; /* não sublinhar o link */
+}
+a:hover { /* pra sublinhar os links quando passar o mouse sobre */
+    text-decoration: underline;
 }
 /* FORMATAÇÃO DE IMAGENS COM LEGENDAS
 1 ETAPA: defininir uma classe para as imagens
@@ -141,6 +149,38 @@ section#corpo {
     border-right: 1px solid black;
     padding-right: 15px;
 }
+
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: green;
+    background-color: yellow;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 10px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: blue;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita { /* tudo que for da classe direita, terá esta formtação */
+    text-align: right ;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color:black;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: blue;
+}
 table#tabelaspec {
     border: 1px solid black;
 }
@@ -151,8 +191,33 @@ table#tabelaspec td {
     margin-left: auto;
     margin-right: auto;
     padding: 10px; /* espaço interno entre as tabelas */
+    text-align: center;
+    vertical-align: center; /*alinhado ao topo */
 }
 
+table#tabelaspec td.ce {
+    color:white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd { /* a classe sobrepõe e tag principal */
+    color: black;
+    font-weight: bold;
+}
+table#tabelaspec caption {/* configurando o titulo da tabela */
+    color: red;
+    font-size: 13pt;
+    font-weight: bolder; /*negrito */
+}
+table#tabelaspec caption span{
+    display: block; /* se mostra como um bloco flutuante, desconectado do texto */
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px; /* para ficar mais próximo da tabela */
+}
 aside#lateral {
     display: block; /* aparecer como bloco */ 
     width: 350px;  /*definiçao da largura */
