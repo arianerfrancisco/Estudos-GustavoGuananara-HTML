@@ -12,8 +12,9 @@ iframe#frame-spec {
     height: 280px;
     border: none;
     overflow: hidden; /*remover a visualização do conteúdo*/
+
 }
 
 iframe#frame-spec::-webkit-scrollbar {
-    display: none; /*esconder a barra de rolagem*/
+    display: none; 
 }
