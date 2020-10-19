@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media.css">
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
@@ -25,18 +26,40 @@
 </ul>
 </nav>
     </header>
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Glass > Multimidia</h3>
+                <h1>Sons e Vídeos</h1> 
+                <h2>por Gustavo Guanabara<h3>
+                <h3 class="direita">Atualizado em 01/Maio/2013></h3>
+            </hgroup>
+        </header>
 
+        <div id="tv-radio" >
+            <audio id="musica" controls="controls">
+                <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"> <!-- navegadores executam formatos diferente de audio, assim poderá ser necessário colocar em mais formatos Ex: miro video (conversao arquivos de audio)
+                <source src="caminho do arquivo.m4a" type="audio/x-aac">
+                <source src="caminho do arquivo.ogg" type="audio/ogg">
+                -->
+                Desculpe, mas não foi possível carregador o  áudio. <!-- Essa mensagem só irá aparecer caso nenhum source seja compatível-->
 
-Áudio e Vídeo
+            </audio >
+            <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+              <source src="_media/getting-started.mp4" type="video/mp4">
+              <!-- Segue abaixo outros formatos compatíveis
+            <source src="caminho do arquivo.webm" type="video/webm">
+            <source src="caminho do arquivo.ogg" type="video/ogg">
+              -->
+              Desculpe, mas não foi possível carregador o  vídeo. <!-- Essa mensagem só irá aparecer caso nenhum source seja compatível-->
+            </video>
+        </div>
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-<footer id="rodape"> <p>Copyright 2013 - by Gustavo Guanabaraa</p>
+   </article>
+</section>
+<footer id="rodape"> 
+<p>Copyright 2013 - by Gustavo Guanabaraa</p>
 </footer>
 </div>  
 </body>

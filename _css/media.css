@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div#tv-radio {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url('../_imagens/radio-tv.png') no-repeat;
+}
+audio#musica {
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 500px;
+    width: 300px;
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 85px;
+    width: 440px;
+}
+/* Sempre que hospedamos áudios e videos poderão aumentar os custos do plano de hospedagem. Uma alternativa é compartilhar a partir de un link do YouTube
+Com o vídeo aberto selecionados compartilhar e depois incorporar 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MkQwztLwQcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*/
